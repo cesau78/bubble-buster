@@ -1,6 +1,5 @@
 import { useTimer } from 'react-timer-hook';
 
-import logo from './logo.svg';
 import './App.css';
 
 
