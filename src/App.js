@@ -2,6 +2,8 @@ import { useTimer } from 'react-timer-hook';
 
 import './App.css';
 
+import {TimerDisplay} from "./components/TimerDisplay";
+
 
 function App() {
   const time = new Date();
@@ -23,9 +25,7 @@ function App() {
       <header className="App-header">
       <h1>react-timer-hook </h1>
       <p>Timer Demo</p>
-      <div style={{fontSize: '100px'}}>
-        <span>{days}</span>:<span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>
-      </div>
+      <TimerDisplay style={{fontSize: '100px'}} days={days} hours={hours} minutes={minutes} seconds={seconds} />
       <p>{isRunning ? 'Running' : 'Not running'}</p>
       <button onClick={start}>Start</button>
       <button onClick={pause}>Pause</button>
