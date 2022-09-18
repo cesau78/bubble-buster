@@ -16,6 +16,10 @@
 .App-link {
   color: #61dafb;
 }
+.Timer {
+  font-size: 96pt;
+  font-family: monospace;
+}
 
 @keyframes App-logo-spin {
   from {

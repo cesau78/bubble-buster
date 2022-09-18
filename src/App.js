@@ -25,7 +25,7 @@ function App() {
       <header className="App-header">
       <h1>react-timer-hook </h1>
       <p>Timer Demo</p>
-      <TimerDisplay style={{fontSize: '100px'}} days={days} hours={hours} minutes={minutes} seconds={seconds} />
+      <TimerDisplay className="Timer" days={days} hours={hours} minutes={minutes} seconds={seconds} />
       <p>{isRunning ? 'Running' : 'Not running'}</p>
       <button onClick={start}>Start</button>
       <button onClick={pause}>Pause</button>
