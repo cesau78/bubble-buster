@@ -1,3 +1,5 @@
+import zPad from "./zpad";
+
 /**
  * 
  * @param {*} props 
@@ -32,18 +34,5 @@ export const TimerDisplay = (props = {}) => {
     const div = (<div id={id} style={style} className={className}>{display}</div>);
 
     return div;
-
     
-};
-
-const zPad = (value, {digits = 2} = {}) => {
-    const valueAsString = value.toString();
-
-    //short-circuit if length is alread appropriate
-    if (valueAsString.length >= digits) {
-        return valueAsString;
-    }
-
-    const zPaddedValue = valueAsString.padStart(digits, '0');
-    return zPaddedValue;
 };
