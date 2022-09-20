@@ -3,6 +3,7 @@ import { useTimer } from "react-timer-hook";
 import "./App.css";
 
 import { TimerDisplay } from "./components/TimerDisplay";
+import Menu from "./Menu";
 
 function App() {
   const time = new Date();
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div className="App">
+      <Menu />
       <header className="App-header">
         <h1>react-timer-hook </h1>
         <p>Timer Demo</p>
